@@ -1,7 +1,7 @@
 <?php
-	$link = mysql_connect('localhost', 'root', '');
+	$link = mysqli_connect('localhost', 'root', '');
 	if (!$link) {
-		die('Connection Failed!'.mysql_error());
+		die('Connection Failed!'.mysqli_connect_error());
 	} else {
 		echo 'Connection Succeed!';
 	}
