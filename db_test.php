@@ -5,5 +5,6 @@
 	} else {
 		echo 'Connection Succeed!';
 		mysqli_set_charset($link, "utf8");
+		mysqli_close($link);
 	}
 ?>
